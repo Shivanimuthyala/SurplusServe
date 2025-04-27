@@ -1,0 +1,198 @@
+/* Container Styles */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../Images/register_BG.jpeg') no-repeat center center;
+  min-height: 100vh;
+  min-width: 100vh;
+  object-fit: cover;
+  background-size: cover;
+}
+
+/* Form Box */
+.register-box {
+  background: rgba(144, 136, 126, 0.5); /* Semi-transparent light brown (tan) */
+  padding: 20px 40px; /* Reduced padding */
+  border-radius: 20px; /* Reduced border radius */
+  box-shadow: 0 4px 10px rgba(9, 9, 9, 0.827);
+  width: 30%; /* Reduced width */
+  max-width: 35%;
+  max-height: 85vh;
+  position: relative;
+  left: 25%; /* Adjusted for centering */
+  margin-top: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Form Heading */
+.register-box h2 {
+  color: #0b0c0d; /* Dark brown */
+  text-align: center; /* Center the heading */
+  font-size: 1.5rem; /* Reduced font size */
+}
+
+/* Form Group Styles */
+.register-box label {
+  margin-bottom: 0px;
+  color: #0c0b0bc5; /* Dark brown */
+  font-size: 14px; /* Adjusted font size */
+}
+
+.register-box input,
+.register-box select {
+  width: 100%;
+  padding: 6px; /* Reduced padding */
+  border: 1px solid #0e0d0c; /* Medium brown */
+  border-radius: 4px; /* Reduced border radius */
+  font-size: 11px; /* Smaller font size */
+}
+
+/* Button Styles */
+.register-box .register-button {
+  width: 60%; /* Reduced width */
+  padding: 8px 18px; /* Reduced padding */
+  background: #152744; /* Tan (light brown) */
+  color: #61d2b4;
+  border-radius: 5px;
+  font-size: 90%; /* Smaller font size */
+  cursor: pointer;
+  margin: 20px auto 0;
+  display: block;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.register-box .register-button:hover {
+  background: #61d2b4; /* Antique brass */
+  color: #152744;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Effect */
+.register-box .register-button:active {
+  background: #367591;
+  transform: scale(1.02);
+}
+.register-box .login-link{
+  font-size: 2.5vh;
+}
+.register-box .login-link a{
+  color:#61d2b4;
+  font-size: 2.5vh;
+}
+.register-box .login-link a:hover{
+  color:#367591;
+}
+
+/* Password Visibility Toggle */
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .register-box {
+    width: 85%; /* Adjusted width for smaller screens */
+    padding: 15px; /* Reduced padding */
+  }
+
+  .register-box .register-button {
+    width: 70%; /* Adjusted button width */
+  }
+}
+
+@media (max-width: 480px) {
+  .register-box {
+    padding: 10px; /* Reduced padding */
+  }
+
+  .register-box label {
+    font-size: 13px; /* Adjusted font size */
+  }
+
+  .register-box input,
+  .register-box select {
+    font-size: 11px; /* Smaller font size */
+  }
+
+  .register-box .register-button {
+    width: 75%; /* Adjusted button width */
+  }
+}
+
+/* Password Visibility Toggle */
+.input-icon {
+  position: relative;
+}
+
+.input-icon input {
+  padding-right: 2.5rem; /* Add space for the icon inside the field */
+}
+
+.input-icon .icon-right {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem; /* Adjust this value as needed */
+  transform: translateY(-50%);
+  color: #999; /* Adjust color to match your design */
+  cursor: pointer; /* Make the icon clickable */
+  pointer-events: all; /* Allow interaction with the icon */
+}
+
+/* Optional: Icon hover effect */
+.input-icon .icon-right:hover {
+  color: #430b60; /* Change color on hover */
+}
+
+/* Container for the image and heading */
+.banner-container {
+  position: relative; /* Allows absolute positioning for child elements */
+  width: 100%;
+}
+
+/* Style for the image */
+.banner-image {
+  width: 80%; /* Reduce the image size */
+  height: auto; /* Keeps the image's aspect ratio intact */
+  object-fit: cover; /* Ensures the image covers the space appropriately */
+  margin: 0 auto; /* Center the image */
+}
+
+/* Style for the heading */
+.banner-heading {
+  position: absolute; /* Positions the heading on top of the image */
+  top: 35%; /* Move the heading higher (adjust as needed) */
+  right: 5%; /* Move heading further to the right */
+  transform: translateY(-50%); /* Vertically centers the heading */
+  font-size: 2rem; /* Decrease the size of the text */
+  color: white; /* Sets the text color */
+  font-weight: bold; /* Makes the text bold */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Optional: Adds shadow to make the text stand out */
+}
+
+/* Optional: Media queries for responsiveness */
+@media (max-width: 768px) {
+  .banner-heading {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+    right: 3%; /* Adjust position for smaller screens */
+  }
+}
+/* Example CSS for modal button */
+.ok-button {
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.ok-button:hover {
+  background-color: #45a049;
+}

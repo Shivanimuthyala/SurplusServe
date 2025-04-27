@@ -1,0 +1,170 @@
+/* Base Styles */
+.navbar {
+  top: 0;
+  z-index: 1000;
+}
+
+/* Outer Box Styling */
+.donor-container {
+  background: url('../Images/donor_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 10px 20px;
+  
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 10vh;
+  max-height: 90vh;
+  
+}
+
+/* Inner Box Styling */
+.donor-boxx {
+  flex: 1;
+  width: 30%;
+  max-width: 30%;
+  height: 87vh;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #f1f1f1,#367591,#f1f1f1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
+  position: relative;
+  
+  
+}
+.donor-boxx h1{
+  text-align: center;
+  margin-top: 0px;
+  color:#152744;
+}
+
+/* Input Field Grouping */
+.donor-boxx .input-group {
+  margin-bottom: 7px;
+}
+
+.donor-boxx .input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.donor-boxx .input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.donor-boxx .input-group input[type="date"] {
+  cursor: pointer;
+}
+
+/* Button Styling */
+.donor-boxx button { 
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #152744;
+  color: #61d2b4;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  
+}
+
+.donor-boxx button:hover {
+  background-color: #61d2b4 !important;
+  color: #152744;
+}
+/* Center the button */
+.donor-boxx form {
+  text-align: center; /* Center align the button */
+}
+
+/* Conditional Fields Styling */
+.donor-boxx .conditional-fields {
+  margin-top: 5px;
+}
+
+.donor-boxx .conditional-fields select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For small screens (mobile phones) */
+@media (max-width: 600px) {
+  .donor-container {
+    padding: 5px;
+  }
+
+  .donor-boxx {
+    width: 95%;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .donor-boxx .input-group label {
+    font-size: 12px;
+  }
+
+  .donor-boxx .input-group input,
+  .input-group select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .donor-boxx button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 768px) {
+  .donor-boxx {
+    width: 90%;
+  }
+
+  .donor-boxx .input-group label {
+    font-size: 13px;
+  }
+
+  .donor-boxx .input-group input,
+  .input-group select {
+    font-size: 15px;
+    padding: 9px;
+  }
+
+  .donor-boxx button {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 1200px) {
+  .donor-boxx {
+    width: 50%;
+  }
+}
